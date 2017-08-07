@@ -1,3 +1,8 @@
+###############
+# Reference
+# http://www.awesomestats.in/python-cluster-validation/
+###############
+
 import pandas as pd
 
 #fetching R datasets to use in python
@@ -46,6 +51,5 @@ clusters_df[0:10]
 #plot the eblow curve to visuvalize the results
 plt.figure(figsize=(12,6))
 plt.plot( clusters_df.num_clusters, clusters_df.cluster_errors, marker = "o" )
-
 
 #take the last point as number of cluster to be used in clustring, where you can it is a drastic change from the previous point
