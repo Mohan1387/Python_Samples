@@ -2,6 +2,7 @@
 # Reference
 # http://www.awesomestats.in/python-cluster-validation/
 # http://blog.mpacula.com/2011/04/27/k-means-clustering-example-python/
+# http://stamfordresearch.com/k-means-clustering-in-python/
 ###############
 
 import pandas as pd
