@@ -1,0 +1,14 @@
+def get_start_end():
+    oneday = datetime.timedelta(days=1)
+    today = datetime.date.today()
+    year_4 = today - datetime.timedelta(days=1095)
+    end_dt = today - datetime.timedelta(days=today.weekday())
+ 
+    start = datetime.date(year=year_4.year, month=1, day=1)
+    while start.weekday() != 0:
+        start += oneday
+
+    return start, end_dt
+
+
+start_date, end_date = get_start_end()
